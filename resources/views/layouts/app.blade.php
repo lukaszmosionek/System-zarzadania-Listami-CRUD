@@ -49,6 +49,7 @@
         gtag('config', 'UA-118965717-1');
     </script>
     <link href="vendors/@coreui/chartjs/css/coreui-chartjs.css" rel="stylesheet">
+    @livewireStyles
 </head>
 <body>
     @include('partials.sidebar')
@@ -75,7 +76,11 @@
 <script src="https://coreui.io/demo/4.0/free/vendors/@coreui/chartjs/js/coreui-chartjs.js"></script>
 <script src="https://coreui.io/demo/4.0/free/vendors/@coreui/utils/js/coreui-utils.js"></script>
 <script src="https://coreui.io/demo/4.0/free/js/main.js"></script>
-<script>
+@livewireScripts
+<script src="https://cdn.jsdelivr.net/gh/livewire/sortable@v0.x.x/dist/livewire-sortable.js"></script>
+
+
+    <script>
 </script>
 </body>
 </html>

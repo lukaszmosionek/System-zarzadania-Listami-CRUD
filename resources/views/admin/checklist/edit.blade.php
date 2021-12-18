@@ -70,7 +70,7 @@
                             </div>
                             <div class="form-group">
                                 <label class="form-label" for="name">{{ __('Opis') }}</label>
-                                <textarea class="form-control" placeholder="{{__('nazwa tasku')}}" rows="5" name="description">{{ old('description') }}</textarea>
+                                <textarea class="form-control" id="editor" placeholder="{{__('nazwa tasku')}}" rows="5" name="description">{{ old('description') }}</textarea>
                             </div>
                         </div>
                         <div class="card-footer">
@@ -87,4 +87,14 @@
     <br>
     <br>
     <br>
+@endsection
+
+@section('scripts')
+    <script>
+        ClassicEditor
+            .create( document.querySelector( '#editor' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+    </script>
 @endsection

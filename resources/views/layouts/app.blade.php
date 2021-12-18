@@ -76,11 +76,12 @@
 <script src="https://coreui.io/demo/4.0/free/vendors/@coreui/chartjs/js/coreui-chartjs.js"></script>
 <script src="https://coreui.io/demo/4.0/free/vendors/@coreui/utils/js/coreui-utils.js"></script>
 <script src="https://coreui.io/demo/4.0/free/js/main.js"></script>
+<script src="https://cdn.ckeditor.com/ckeditor5/30.0.0/classic/ckeditor.js"></script>
+
 @livewireScripts
 <script src="https://cdn.jsdelivr.net/gh/livewire/sortable@v0.x.x/dist/livewire-sortable.js"></script>
 
+@yield('scripts')
 
-    <script>
-</script>
 </body>
 </html>

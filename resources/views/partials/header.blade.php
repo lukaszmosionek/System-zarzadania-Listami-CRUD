@@ -14,9 +14,10 @@
             <li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
         </ul>
         <ul class="header-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#">
+            <li class="nav-item"><a class="nav-link" href="{{route('podstrona')}}">Podstrona</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{route('welcome')}}">
                     <svg class="icon icon-lg">
-                        <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-bell"></use>
+                        <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-settings"></use>
                     </svg></a></li>
             <li class="nav-item"><a class="nav-link" href="#">
                     <svg class="icon icon-lg">
@@ -65,10 +66,12 @@
                     <div class="dropdown-divider"></div><a class="dropdown-item" href="#">
                         <svg class="icon me-2">
                             <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-lock-locked"></use>
-                        </svg> Lock Account</a><a class="dropdown-item" href="#">
+                        </svg> Lock Account</a>
+                    <a class="dropdown-item" href="/logout">
                         <svg class="icon me-2">
                             <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-account-logout"></use>
-                        </svg> Logout</a>
+                        </svg> Logout
+                    </a>
                 </div>
             </li>
         </ul>

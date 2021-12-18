@@ -33,7 +33,7 @@ Route::group(['middleware' =>'auth'], function(){
         Route::resource('pages', PageController::class)->only(['edit', 'update']);
         Route::resource('checklist_groups', ChecklistGroupController::class);
         Route::resource('checklist_groups.checklists', ChecklistController::class);
-
         Route::resource('checklists.tasks', TaskController::class);
+        Route::get('users', [\App\Http\Controllers\Admin\UserController::class, 'index'])->name('users.index');;
     });
 });

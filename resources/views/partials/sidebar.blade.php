@@ -67,6 +67,12 @@
                 </a>
             </li>
             @endforeach
+
+            <li class="nav-group">
+                <a class="nav-link" href="{{ route('admin.users.index')  }}">
+                    <svg class="nav-icon"><use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-puzzle"></use></svg>{{ __('Użytkownicy') }}
+                </a>
+            </li>
         @endif
 {{--        <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">--}}
 {{--                <svg class="nav-icon">--}}

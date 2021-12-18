@@ -58,6 +58,15 @@
             @endforeach
             <li class="nav-group"><a class="nav-link" href="{{ route('admin.checklist_groups.create')  }}">{{ __('Dodaj nową grupę') }}</a></li>
 
+            <li class="nav-title">{{ __('Strony') }}</li> <!-- Głowna kategoria  -->
+
+            @foreach(\App\Models\Page::all() as $page)
+            <li class="nav-group">
+                <a class="nav-link" href="{{ route('admin.pages.edit', $page->id)  }}">
+                    <svg class="nav-icon"><use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-puzzle"></use></svg>{{$page->title}}
+                </a>
+            </li>
+            @endforeach
         @endif
 {{--        <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">--}}
 {{--                <svg class="nav-icon">--}}
